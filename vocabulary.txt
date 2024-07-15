@@ -1,0 +1,31 @@
+Domain Specific Language(DSL) 领域特定语言
+left recursive 左递归
+parse tree 语法分析树
+listener 监听器
+visitor 访问器
+semantic predicate 语义判定
+alias 别名
+language 语言
+sentence 语句
+phrase 词组
+subphrase 子语句
+vocabulary symbol 词汇符号
+interceptor 解释器
+translator 翻译器
+Perform Assignment “执行赋值”或“进行赋值”
+"The function will perform the assignment of the value to the variable." 可以翻译为：“该函数将执行将值赋给变量的操作。”
+"To update the variable, you need to perform an assignment with the new value." 可以翻译为：“要更新变量，你需要用新值进行赋值。”
+Translate Assignment “翻译赋值”或“转换赋值”
+"The compiler will translate the assignment into machine code." 可以翻译为：“编译器将赋值操作翻译成机器码。”
+"In the interpreter, the translate assignment function converts high-level language assignments to intermediate code." 可以翻译为：“在解释器中，翻译赋值函数将高级语言的赋值操作转换为中间代码。”
+parser 语法分析器 识别语言的程序成为语法分析器或者句法分析器
+syntax 句法 句法是指约束语言中各个组成部分之间关系的规则
+grammar 语法 是一系列规则的集合
+syntax analyzer 句法分析器
+token 词法符号
+lexical analysis 词法分析 将字符聚集为单词或符号的过程成为词法分析或者词法符号化
+tokenizing 词法符号化
+lexer 词法分析器 可以将输入文本转换为词法符号的程序叫词法分析器
+parser tree 语法书
+synta tree 句法树
+
