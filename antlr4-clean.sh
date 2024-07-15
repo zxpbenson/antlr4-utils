@@ -10,7 +10,7 @@ ROOT_DIR=`(cd $ROOT_DIR/.; pwd)`
 #echo $@
 #echo $*
 
-rm ./*.java
-rm ./*.class
-rm ./*.interp
-rm ./*.tokens
+rm -f ./*.java
+rm -f ./*.class
+rm -f ./*.interp
+rm -f ./*.tokens
