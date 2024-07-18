@@ -26,6 +26,13 @@ token 词法符号
 lexical analysis 词法分析 将字符聚集为单词或符号的过程成为词法分析或者词法符号化
 tokenizing 词法符号化
 lexer 词法分析器 可以将输入文本转换为词法符号的程序叫词法分析器
-parser tree 语法书
-synta tree 句法树
+parser tree 语法树
+syntax tree 句法树
+recursive descent parser 递归下降语法分析器
+alternative 备选分支 adj.可供替代的；非传统的；另类的 n.可供选择的事物
+parsing decision 语法分析决策
+prediction 预测
+lookaheadtoken 前瞻词法符号
+literal 字面量
+semantic predicate 语义判定
 

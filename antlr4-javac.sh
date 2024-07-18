@@ -10,11 +10,5 @@ ROOT_DIR=`(cd $ROOT_DIR/.; pwd)`
 #echo $@
 #echo $*
 
-rm -f ./*.java
-rm -f ./*.class
-rm -f ./*.interp
-rm -f ./*.tokens
-
-java -jar $ROOT_DIR/antlr-4.7.1-complete.jar $*
 javac -cp $ROOT_DIR/antlr-4.7.1-complete.jar ./*.java
 

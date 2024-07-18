@@ -8,9 +8,11 @@ curl -O https://www.antlr.org/download/antlr-4.7.1-complete.jar
 不同系统或不同版本设置环境变量的方法有所不同，我的是MacOS Sonoma 14.4
 在 vim ~/.zshrc 写入如下内容(需要改成自己的真实路径)：
 
-alias antlr4="~/workspace/github.com/zxpbenson/antlr4-utils/antlr4.sh"
-alias gantlr4="~/workspace/github.com/zxpbenson/antlr4-utils/gantlr4.sh"
-alias cantlr4="~/workspace/github.com/zxpbenson/antlr4-utils/cantlr4.sh"
+alias antlr4-compile="~/workspace/github.com/zxpbenson/antlr4-utils/antlr4-compile.sh"
+alias antlr4-run="~/workspace/github.com/zxpbenson/antlr4-utils/antlr4-run.sh"
+alias antlr4-generate="~/workspace/github.com/zxpbenson/antlr4-utils/antlr4-generate.sh"
+alias antlr4-javac="~/workspace/github.com/zxpbenson/antlr4-utils/antlr4-javac.sh"
+alias antlr4-clean="~/workspace/github.com/zxpbenson/antlr4-utils/antlr4-clean.sh"
 
 保存后退出，重开一个端口，使刚才的别名生效
 
