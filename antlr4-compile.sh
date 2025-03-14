@@ -15,6 +15,6 @@ rm -f ./*.class
 rm -f ./*.interp
 rm -f ./*.tokens
 
-java -jar $ROOT_DIR/antlr-4.7.1-complete.jar $*
+java -jar $ROOT_DIR/antlr-4.7.1-complete.jar -visitor $*
 javac -cp $ROOT_DIR/antlr-4.7.1-complete.jar ./*.java
 

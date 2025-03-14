@@ -32,7 +32,13 @@ recursive descent parser 递归下降语法分析器
 alternative 备选分支 adj.可供替代的；非传统的；另类的 n.可供选择的事物
 parsing decision 语法分析决策
 prediction 预测
-lookaheadtoken 前瞻词法符号
+lookahead token 前瞻词法符号
 literal 字面量
 semantic predicate 语义判定
+precedence climbing 优先级上升
+predicated look 判定循环
+nongreedy subrule 非贪婪子规则
+context-sensitive 上下文相关
+scannerless parser 无扫描器的语法分析器
+comma-separated-value CSV
 
