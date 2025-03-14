@@ -10,7 +10,6 @@ ROOT_DIR=`(cd $ROOT_DIR/.; pwd)`
 #echo $@
 #echo $*
 
-source $ROOT_DIR/antlr4-env.sh
-
-javac -cp $ROOT_DIR/$ANTLR4_JAR ./*.java
-
+export ANTLR4_JAR=antlr-4.13.2-complete.jar
+#export ANTLR4_JAR=antlr-4.13.1-complete.jar
+#export ANTLR4_JAR=antlr-4.7.1-complete.jar

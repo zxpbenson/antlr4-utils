@@ -10,4 +10,6 @@ ROOT_DIR=`(cd $ROOT_DIR/.; pwd)`
 #echo $@
 #echo $*
 
-java -cp .:$ROOT_DIR/antlr-4.7.1-complete.jar org.antlr.v4.gui.TestRig $*
+source $ROOT_DIR/antlr4-env.sh
+
+java -cp .:$ROOT_DIR/$ANTLR4_JAR org.antlr.v4.gui.TestRig $*
