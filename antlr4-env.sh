@@ -10,6 +10,6 @@ ROOT_DIR=`(cd $ROOT_DIR/.; pwd)`
 #echo $@
 #echo $*
 
-export ANTLR4_JAR=antlr-4.13.2-complete.jar
+#export ANTLR4_JAR=antlr-4.13.2-complete.jar
 #export ANTLR4_JAR=antlr-4.13.1-complete.jar
-#export ANTLR4_JAR=antlr-4.7.1-complete.jar
+export ANTLR4_JAR=antlr-4.7.1-complete.jar
