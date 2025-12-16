@@ -1,9 +1,22 @@
 #!/bin/bash
 
+ROOT_DIR=`dirname ${BASH_SOURCE[0]}`
+ROOT_DIR=`(cd $ROOT_DIR/.; pwd)`
+
+if [ -f "$ROOT_DIR/.env" ]; then
+    # 如果存在，就执行 source
+    source $ROOT_DIR/.env
+    echo ".env 文件已加载"
+fi
+
+
 # 默认值
 SRC_DIR="./"
-DST_DIR="path/to/target"
-HEADER=""
+DST_DIR=${DST_DIR:-"path/to/target"}
+HEADER=${DST_DIR:-"com.example.pkg"}
+
+echo "WorkDir:"
+pwd
 
 # 解析 -p 形式参数
 while [[ $# -gt 0 ]]; do
@@ -27,13 +40,20 @@ if [[ -z "$SRC_DIR" || -z "$DST_DIR" || -z "$HEADER" ]]; then
     exit 1
 fi
 
+echo "\$SRC_DIR=$SRC_DIR"
+echo "\$DST_DIR=$DST_DIR"
+
 # 遍历所有 .java 文件
 find "$SRC_DIR" -type f -name "*.java" | while read -r src_file; do
     # 获取相对路径
-    rel_path="${src_file#$SRC_DIR/}"
+
+    #echo "\$src_file=$src_file"
+    file_name="${src_file#$SRC_DIR/}"
+    #echo "\$file_name=$file_name"
 
     # 构造目标文件路径
-    dst_file="$DST_DIR/$rel_path"
+    dst_file="$DST_DIR/$file_name"
+    #echo "\$dst_file=$dst_file"
 
     # 确保目标目录存在
     mkdir -p "$(dirname "$dst_file")"
@@ -47,5 +67,10 @@ find "$SRC_DIR" -type f -name "*.java" | while read -r src_file; do
     } > "$dst_file"
     #echo $dst_file
 
-    echo "Processed: $rel_path"
+    echo "Processed: $file_name"
 done
+
+echo "cp $SRC_DIR/*.tokens $DST_DIR/"
+cp $SRC_DIR/*.tokens $DST_DIR/
+echo "cp $SRC_DIR/*.interp $DST_DIR/"
+cp $SRC_DIR/*.interp $DST_DIR/
