@@ -13,7 +13,7 @@ fi
 # 默认值
 SRC_DIR="./"
 DST_DIR=${DST_DIR:-"path/to/target"}
-HEADER=${DST_DIR:-"com.example.pkg"}
+HEADER=${HEADER:-"com.example.pkg"}
 
 echo "WorkDir:"
 pwd
